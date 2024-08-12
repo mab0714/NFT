@@ -6,7 +6,7 @@ keywords = sys.argv[1]
 recent = int(sys.argv[2])
 
 def getYouTubeData(keywords,recent):
-    api = Api(api_key="AIzaSyDkRxErB1pDXHJK7BkLJnVqgnvx0FHyQWE")
+    api = Api(api_key="")
     r = api.search_by_keywords(q=keywords, search_type=["comments"], count=recent, limit=50)
     f = open("C:\\Users\\Marvin\\Desktop\\NFT\\source\\data\\youtube_" + keywords.replace("+","") + ".txt", "w", encoding="utf8")
     youtube_string = ""
